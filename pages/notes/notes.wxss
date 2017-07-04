@@ -1,0 +1,24 @@
+/* pages/notes/notes.wxss */
+.usernote{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.usermotto {
+  margin-top: 20px;
+}
+.usermotto .usertextarea{
+  color: #000;
+  margin-bottom: 10px;
+  background-color: gainsboro;
+}
+.radio{
+    display: block;
+    margin-top: 10px;
+    margin-left: 05px;
+}
+
+.timeTxt {
+  margin-top: 50px;
+  margin-left: 05px;
+} 

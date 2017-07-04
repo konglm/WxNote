@@ -1,0 +1,34 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.user-motto{
+  display: block;
+  margin-bottom: 80px;
+  text-align: center
+}
+
+.usermotto {
+  margin-top: 20px;
+}
+.usermotto input{
+  color: #000;
+  margin-bottom: 10px;
+  background-color: gainsboro;
+}
+
+.ad_popError{ background: #de352d; color: #fff; height: 58rpx; line-height: 58rpx; font-size: 24rpx; text-align: center; position: absolute; left: 0; top: 0; width: 100%; z-index:3;} 
