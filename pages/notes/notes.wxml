@@ -1,6 +1,6 @@
 <!--pages/notes/notes.wxml-->
-<text class="timeTxt">当前时间：{{nowTime}}</text>
 <view class="container">
+  <text class="timeTxt">当前时间：{{nowTime}}</text>
   <form>
     <view class="usernote">
     <radio-group class="radio-group" bindchange="radioChange">
@@ -12,7 +12,7 @@
    <view class="usermotto">
      备注：  
     <textarea class="usertextarea" placeholder="请输入文本" style="height: 6em" />
-    <button bindtap="noteOk">提交</button>  
+    <button class="weui-btn" type="primary" bindtap="noteOk">提交</button>  
     </view>
   </form>
 </view>
