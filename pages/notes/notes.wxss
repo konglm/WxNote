@@ -4,6 +4,11 @@
   flex-direction: column;
   align-items: left;
 }
+.userinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
 .usermotto {
   margin-top: 20px;
 }
@@ -19,6 +24,10 @@
 }
 
 .timeTxt {
-  margin-top: 50px;
-  margin-left: 05px;
+  display: block;
+} 
+
+.nameTxt {
+  display: block;
+  margin-top: 10px;
 } 

@@ -17,19 +17,30 @@ Page({
       { name: '3', value: '早退' },
       { name: '4', value: '请假' },
       { name: '5', value: '旷课' },
-    ]
+    ],
+    userName: ''
   },
-  onLoad: function () {
+  onLoad: function (data) {
     countdown(this);
+    console.log("传递值：",data);
+    this.setData({userName: data.userName});
   },
   radioChange: function (e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value)
   },
   noteOk: function(){
-    wx.showToast({
-      title: '提交成功',
-      icon: 'success',
-      duration: 2000
+    // wx.showToast({
+    //   title: '提交成功',
+    //   icon: 'success',
+    //   duration: 2000
+    // })
+    wx.navigateTo({
+      url: '../msg/msg_success',
+    })
+  },
+  goLogin: function () {
+    wx.redirectTo({
+      url: '../index/index',
     })
   }
 })

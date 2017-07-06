@@ -24,8 +24,8 @@ Page({
   logIn: function () {
     setTimeout(() => { 
     if ((this.data.userName == 'jsy') && (this.data.userPassword == 'jsy')){
-      wx.navigateTo({
-        url: '../notes/notes'
+      wx.redirectTo({
+        url: '../notes/notes?userName=金视野'
       })
     } else {
       // wx.showToast({
