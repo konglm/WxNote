@@ -34,9 +34,18 @@ Page({
     //   icon: 'success',
     //   duration: 2000
     // })
-    wx.navigateTo({
-      url: '../msg/msg_success',
-    })
+    wx.showModal({
+      content: '是否确认提交？',
+      showCancel: true,
+      success: function (res) {
+        if (res.confirm) {
+          wx.navigateTo({
+            url: '../msg/msg_success',
+          })
+        }
+      }
+    });
+    
   },
   goLogin: function () {
     wx.redirectTo({
